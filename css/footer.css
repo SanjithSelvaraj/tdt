@@ -1,0 +1,80 @@
+.footer {
+    display: flex;
+    padding: 8px 20px;
+    justify-content: space-between;
+    background: var(--Gradient-1, linear-gradient(90deg, #4B7BB3 0.12%, #4D87CC 24.74%, #48B3C5 73.97%, #52C9DC 98.59%));
+}
+
+.copy-rights-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.copy-rights-container img {
+    width: 8px;
+    height: 8px;
+    aspect-ratio: 1/1;
+}
+
+.copy-rights-container span {
+    color: var(--Brand-White, #FFF);
+    font-family: Nunito;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.social-media-container {
+    display: flex;
+    gap: 24px;
+}
+
+.social-media-container img {
+    height: 24px;
+    width: 24px;
+}
+
+
+@media (min-width: 768px) {
+    .footer {
+        padding: 10px 32px;
+        background: var(--Gradient-1, linear-gradient(90deg, #4B7BB3 0.12%, #4D87CC 24.74%, #48B3C5 73.97%, #52C9DC 98.59%));
+    }
+    .copy-rights-container img {
+        width: 18px;
+        height: 18px;
+        aspect-ratio: 1/1;
+    }
+    .copy-rights-container span {
+        font-size: 14px;
+    }
+
+    .social-media-container img {
+        height: 32px;
+        width: 32px;
+    }
+
+}
+
+@media (min-width: 1025px) {
+    .footer {
+        padding: 12px 40px;
+        background: var(--Gradient-1, linear-gradient(90deg, #4B7BB3 0.12%, #4D87CC 24.74%, #48B3C5 73.97%, #52C9DC 98.59%));
+    }
+    .copy-rights-container {
+        gap: 12px;
+    }
+    .copy-rights-container img {
+        width: 12px;
+        height: 12px;
+        aspect-ratio: 1/1;
+    }
+    .copy-rights-container span {
+        font-size: 14px;
+    }
+    .social-media-container img{
+        height: 50px;
+        width: 50px;
+    }
+
+}

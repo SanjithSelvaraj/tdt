@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TetraDtech Solutions</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/servicesWeProvide.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header id="navBar-placeholder"></header>
+    <main>
+        <section class="hero-section">
+            <div class="hero-section-content">
+                <h1>Innovating Your Digital Experience</h1>
+                <a href="portfolio.html">Start Your Web App Project</a>
+                <a href="contact-us.html">Get a Quote</a>
+            </div>
+        </section>
+        <section class="solutions-section">
+            <div class="solutions-section-content">
+                <h1>Web Solutions we Develop</h1>
+                <p>We specialize in creating custom web applications designed to meet your specific business goals and
+                    enhance user experience</p>
+            </div>
+        </section>
+        <section class="see-our-work-section">
+            <div class="work-section-cart">
+                <div class="work-section-cart-img-div">
+                    <img id="work-responsive-image"
+                        src="public/images/background-images/landing-page-work-section-sd.png"
+                        class="work-section-img" />
+                </div>
+                <div class="work-section-cart-content">
+                    <h1>
+                        At TetraDtech, digital innovation is our core focus
+                    </h1>
+                    <p>With extensive expertise in web and app development, we've empowered businesses to achieve their
+                        goals and stay ahead in the digital landscape. Trust us to bring your ideas to life with
+                        cutting-edge solutions tailored to your needs.</p>
+                    <a href="contact-us.html">Get a Free Consultation</a>
+                    <a href="portfolio.html">See our Work</a>
+                </div>
+            </div>
+        </section>
+        <section id="services-we-provide-placeholder"></section>
+        <section class="contact-us-section">
+            <img src="public/images/background-images/Contact-Us-Gif.gif" class="contact-us-gif" />
+            <h1>Lets take your business to the next level</h1>
+            <a href="contact-us.html">Contact Us</a>
+        </section>
+    </main>
+    <footer id="footer-placeholder">
+    </footer>
+
+    <script src="js/includeNavBar.js"></script>
+    <script src="js/servicesWeProvide.js"></script>
+    <script src="js/includeFooter.js"></script>
+    <script>
+        function setImageSrc() {
+            const img = document.getElementById('work-responsive-image');
+            const width = window.innerWidth;
+            if (width < 640) {
+                img.src = "public/images/background-images/landing-page-work-section-sd.png";
+            } else if (width >= 640 && width < 1024) {
+                img.src = "public/images/background-images/landing-page-work-section-md.png";
+            } else {
+                img.src = "public/images/background-images/landing-page-work-section-ld.png";
+            }
+        }
+        // Set image on page load
+        window.addEventListener('load', setImageSrc);
+        // Set image on window resize
+        window.addEventListener('resize', setImageSrc);
+    </script>
+</body>
+
+</html>

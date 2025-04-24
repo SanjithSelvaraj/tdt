@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-size: 16px;
+    color: #fff;
+    font-family: Nunito;
+    font-style: normal;
+    max-width: 1440px;
+    margin: auto;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    outline: none;
+}
+
+.overflow-y-hidden {
+    overflow-y: hidden;
+}
+
+#navBar-placeholder {
+    position: sticky;
+    top: 0;
+    /* Optional: so it doesn't blend into the background */
+    z-index: 100;
+}
+
+.nav-bar-container {
+    padding: 24px 20px;
+    height: 80px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tdt-logo {
+    width: 76px;
+    height: 40px;
+}
+
+.logo-a-tag {
+    width: 76px;
+    height: 40px;
+}
+
+.tdt-logo-png {
+    width: 76px;
+    height: 40px;
+}
+.hamburger-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.nav-list-large-device {
+    display: none;
+    height: 60px;
+    padding: 16.5px 40px;
+    align-items: center;
+    gap: 32px;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    background-image: url('public/images/section-background-images/navbar-bg-ld.png');
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.nav-item-ld {
+    color: var(--Brand-White, #FFF);
+    font-family: Nunito;
+    font-size: 1rem;
+    /* change to 1 rem from 1.25rem */
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.nav-item-ld:hover {
+    cursor: pointer;
+    background: linear-gradient(90deg, #807E7E 0.12%, #858383 32.94%, #A4A4A4 65.77%, #D2CFCF 98.59%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+main {
+    margin-top: -80px;
+}
+
+.menu-container {
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    gap: 40px;
+    border: 1px solid #FFF;
+    background: rgba(68, 170, 187, 0.40);
+    backdrop-filter: blur(10px);
+}
+
+.menu-container.active {
+    display: flex;
+}
+
+.nav-bar-open {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 19px;
+}
+
+.nav-list-small-device {
+    display: flex;
+    flex-direction: column;
+    padding-left: 23px;
+    gap: 32px;
+}
+
+.nav-item-sd {
+    color: var(--Brand-White, #FFF);
+    font-family: Nunito;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.hero-section {
+    background-size: cover;
+    background-position: center;
+    padding-top: 206px;
+}
+
+.hero-section-content {
+    display: flex;
+    flex-direction: column;
+    background: rgba(75, 123, 179, 0.50);
+    padding: 38px 104px 39px 20px;
+}
+
+.hero-section-content h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hero-section-content a {
+    display: inline-flex;
+    width: fit-content;
+    white-space: nowrap;
+    padding: 10px 24px;
+    border-radius: 30px;
+    border: 1px solid #FFF;
+    background: rgba(68, 170, 187, 0.40);
+    backdrop-filter: blur(10px);
+    color: var(--Brand-White, #FFF);
+    font-family: Nunito;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+
+
+@media (min-width: 768px) {
+    .nav-bar-container {
+        padding: 24px 32px 0px 32px;
+        height: 75px;
+    }
+
+    .tdt-logo {
+        width: 116px;
+        height: 51px;
+    }
+
+    .logo-a-tag {
+        width: 116px;
+        height: 51px;
+    }
+
+    .tdt-logo-png {
+        width: 116px;
+        height: 51px;
+    }
+
+    .hero-section {
+        padding: 0px;
+        display: flex;
+    }
+
+    .hero-section-content {
+        /* width: 50vw; */
+        width: 50%;
+        padding: 138px 16px 138px 32px;
+    }
+
+    .hero-section-content h1 {
+        font-size: 1.75rem;
+    }
+
+    .nav-bar-open {
+        padding: 23px 31px;
+    }
+
+    .nav-list-small-device {
+        padding-left: 31px;
+    }
+
+    .menu-container {
+        gap: 45px;
+    }
+
+    .nav-item-sd {
+        font-size: 1.75rem;
+    }
+}
+
+
+@media (min-width: 1025px) {
+
+    .nav-list-large-device {
+        display: flex;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+
+    .nav-bar-container {
+        padding: 40px 56px 0px 40px;
+        height: 100px;
+    }
+
+    .tdt-logo {
+        width: 142px;
+        height: 60px;
+    }
+
+    .logo-a-tag {
+        width: 142px;
+        height: 60px;
+    }
+
+    .tdt-logo-png {
+        width: 142px;
+        height: 60px;
+    }
+
+    .hero-section-content {
+        padding: 225px 107px 225px 40px;
+        /* width: 49.122vw; */
+        width: 49.122%;
+        min-height: 768px;
+    }
+
+    .hero-section-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section-content a {
+        font-size: 1.5rem;
+    }
+
+    main {
+        margin-top: -100px;
+    }
+
+}
+
+@media (min-width: 1280px) {
+    .nav-item-ld {
+        font-size: 1.25rem;
+    }
+
+}

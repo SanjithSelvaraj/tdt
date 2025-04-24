@@ -1,0 +1,246 @@
+#nav-services {
+    color: var(--Brand-White, #FFF);
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: 9%;
+    text-underline-offset: 21%;
+    text-underline-position: from-font;
+    text-transform: capitalize;
+}
+
+.hero-section {
+    background-image: url("../public/images/background-images/service-page-sd-bg.png");
+    padding-top: 221px;
+}
+
+.hero-section-content {
+    padding: 25px 29px 51px 20px;
+    gap: 16px;
+}
+
+.hero-section-content h1 {
+    white-space: wrap;
+
+}
+
+.hero-section-content p {
+    color: var(--Brand-White, #FFF);
+    text-align: left;
+    font-family: Nunito;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+
+.details-section {
+    padding: 0px 20px;
+    margin-top: -45px;
+}
+
+
+.form-container {
+    display: flex;
+    box-sizing: border-box;
+    padding: 21px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    border-radius: 10px;
+    border: 3px solid #4AB;
+    background: rgba(213, 240, 245, 0.70);
+    backdrop-filter: blur(20px);
+}
+
+.form-img-container {
+    height: 287px;
+    width: 100%;
+    max-width: 287px;
+    background-image: url("../public/images/background-images/service-page-form-sd-bg.png");
+    border-radius: 10px;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    color: var(--Brand-Black, #383838);
+    font-family: Nunito;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.input-group input {
+    width: 100%;
+    height: 16px;
+    border: none;
+    border-bottom: 1px solid #383838;
+    outline: none;
+    padding: 0px;
+    font-size: 16px;
+    font-family: Nunito;
+    color: var(--Brand-Black, #383838);
+    font-weight: 600;
+    background: transparent;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    
+    /* border-bottom-color: #007BFF; */
+}
+
+.input-group label {
+
+    color: var(--Brand-Black, #383838);
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.error-message {
+    color: #FF000F;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+button {
+
+    display: flex;
+    width: 127px;
+    height: 50px;
+    margin-top: 8px;
+    padding: 0px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid #FFF;
+    background: var(--Brand-Secondary, #4AB);
+    backdrop-filter: blur(10px);
+    color: var(--Brand-White, #FFF);
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+footer {
+    margin-top: 87px;
+}
+
+@media (min-width: 768px) {
+
+    .hero-section {
+        background-image: url(../public/images/background-images/service-page-md-bg.png);
+        padding-top: 0px;
+    }
+
+    .hero-section-content {
+        padding: 111.5px 16px 111.5px 32px;
+        gap: 24px;
+    }
+
+    .hero-section-content p {
+        font-size: 1.5rem;
+    }
+
+    .details-section {
+        margin-top: -80px;
+        padding: 0px 40px;
+    }
+
+    .form-container {
+        flex-direction: row;
+        padding: 29px;
+        gap: 16px;
+    }
+
+    .form-img-container {
+        height: 352px;
+        max-width: 272px;
+        background-image: url(../public/images/background-images/service-page-form-md-bg.png);
+        border-radius: 10px;
+        background-repeat: no-repeat;
+    }
+
+    form h2 {
+        font-size: 1.5rem;
+    }
+
+    .input-group label {
+        height: 22px;
+    }
+
+    button {
+        margin-top: 0px;
+    }
+
+    footer {
+        margin-top: 83px;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .hero-section-content {
+        padding: 198.5px 59px 198.5px 40px;
+        min-height: 630px;
+        max-width: 623px;
+    }
+
+    .details-section {
+        margin-top: -110px;
+        padding: 0px 149px;
+    }
+
+    .form-container {
+        padding: 37px;
+        gap: 32px;
+    }
+
+    .form-img-container {
+        height: 447px;
+        max-width: 395px;
+        background-image: url(../public/images/background-images/service-page-form-ld-bg.png);
+    }
+
+    form {
+        gap: 32px;
+    }
+
+    form h2 {
+        font-size: 1.875rem;
+    }
+
+    .input-group label {
+        font-size: 1.25rem;
+        height: 27px;
+    }
+
+    button {
+        font-size: 1.5rem;
+        padding: 8.5px 24px;
+    }
+
+    footer {
+        margin-top: 43px;
+    }
+}

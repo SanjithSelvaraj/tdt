@@ -1,0 +1,114 @@
+.submit-open-response {
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 21.5px;
+    border: 1px solid #FFF;
+    background: rgba(68, 170, 187, 0.40);
+    backdrop-filter: blur(10px);
+}
+
+.thank-you-container {
+    display: flex;
+    padding: 37px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 3px solid #4AB;
+    background: rgba(213, 240, 245, 0.70);
+    backdrop-filter: blur(20px);
+}
+
+
+.thank-you-gif {
+    height: 100px;
+    width: 89px;
+    background-image: url("../public/images/section-background-images/thank-you-gif-ld.gif");
+    /* background-image: url("../public/images/section-background-images/thank-you-gif-sd.gif"); */
+    background-position: center;
+    background-size: cover;
+    align-self: center;
+}
+
+.thank-you-container h1 {
+    align-self: center;
+    color: var(--Brand-Black, #383838);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 1px 0px;
+}
+
+.thank-you-container p {
+    color: var(--Brand-Black, #383838);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.ok-btn {
+    display: flex;
+    width: 124px;
+    height: 50px;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    border-radius: 30px;
+    border: 1px solid #FFF;
+    background: var(--Brand-Secondary, #4AB);
+    backdrop-filter: blur(10px);
+    color: var(--Brand-White, #FFF);
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.submit-open-response.active {
+    display: flex;
+}
+
+
+@media (min-width: 768px) {
+    .submit-open-response {
+        padding: 0px 156px;
+    }
+    .thank-you-container h1 {
+        padding: 0.5px 0px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .submit-open-response {
+        padding: 0px 366px;
+    }
+    
+    .thank-you-gif {
+        height: 196px;
+        width: 174px;
+        background-image: url("../public/images/section-background-images/thank-you-gif-ld.gif");
+    }
+    .thank-you-container p {
+        font-size: 18px;
+        padding: 1.5px 0px;
+    }
+}

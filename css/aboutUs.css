@@ -1,0 +1,407 @@
+#nav-about-us {
+    color: var(--Brand-White, #FFF);
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: 9%;
+    text-underline-offset: 21%;
+    text-underline-position: from-font;
+    text-transform: capitalize;
+}
+
+.hero-section {
+    background-image: url("../public/images/background-images/about-page-sd-bg.png");
+}
+
+.hero-section-content {
+    padding: 24px 29px 24px 20px;
+    gap: 16px;
+}
+
+.hero-section-content h1 {
+    white-space: nowrap;
+}
+
+.hero-section-content p {
+    color: var(--Brand-White, #FFF);
+    text-align: justify;
+    font-family: Nunito;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.about-us-main-section {
+    padding: 24px 20px;
+}
+
+.about-us-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.about-us-section h1 {
+    color: var(--Brand-Black, #383838);
+    font-family: Nunito;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.about-us-section p {
+    color: var(--Brand-Black, #383838);
+    text-align: justify;
+    font-family: Nunito;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.about-us-sd-gif {
+    max-width: 335px;
+    max-height: 361px;
+    align-self: center;
+}
+
+.about-us-md-gif {
+    display: none;
+}
+
+.about-us-image-small-div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 335px;
+    height: 409px;
+    align-self: center;
+}
+
+.about-us-image-medium-div {
+    display: none;
+    flex-wrap: wrap;
+    min-width: 335px;
+    align-self: center;
+}
+
+.ellipse-1,
+.ellipse-2,
+.ellipse-3,
+.ellipse-4 {
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.ellipse-1 {
+    width: 140px;
+    height: 140px;
+    background-image: url("../public/images/section-background-images/about-us-ellipse-1-sd.png");
+}
+
+.ellipse-2 {
+    margin-top: 18px;
+    margin-left: 10px;
+    width: 185px;
+    height: 185px;
+    background-image: url("../public/images/section-background-images/about-us-ellipse-2-sd.png");
+}
+
+.ellipse-3 {
+    margin-top: -20px;
+    width: 150px;
+    height: 150px;
+    background-image: url("../public/images/section-background-images/about-us-ellipse-3-sd.png");
+}
+
+.ellipse-4 {
+    margin-top: 26px;
+    margin-left: 18px;
+    width: 150px;
+    height: 150px;
+    background-image: url("../public/images/section-background-images/about-us-ellipse-4-sd.png");
+}
+
+.solutions-section-head {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px 20px 113px 20px;
+    background-image: url("../public/images/section-background-images/about-us-vision-sd-bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.solutions-section-head h1 {
+    color: var(--Brand-White, #FFF);
+    font-family: Nunito;
+    font-size: 1.25rem;
+    font-weight: 700;
+
+}
+
+.solutions-section-head p {
+    color: var(--Brand-White, #FFF);
+    font-family: Nunito;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.solutions-scroll {
+    display: flex;
+    overflow-x: auto;
+    /* Enables horizontal scrolling */
+    white-space: nowrap;
+    /* Prevents items from wrapping to the next line */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 70px;
+    margin-top: -81px;
+    gap: 8px;
+    scroll-behavior: smooth;
+    /* Optional: smooth scroll effect */
+}
+
+.solutions-cart {
+    box-sizing: border-box;
+    display: flex;
+    padding: 24px;
+    width: 320px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    border-radius: 10px;
+    border: 3px solid #4AB;
+    background: rgba(213, 240, 245, 0.70);
+    backdrop-filter: blur(20px);
+}
+
+.solutions-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.solutions-cart h1 {
+    color: var(--Brand-Black, #383838);
+    font-family: Nunito;
+    font-size: 1.25rem;
+    font-weight: 600;
+    white-space: wrap;
+}
+
+.solutions-cart p {
+    color: var(--Brand-Black, #383838);
+    text-align: justify;
+    font-family: Nunito;
+    font-size: 14px;
+    font-weight: 400;
+    white-space: wrap;
+
+}
+
+.vector-line svg {
+    width: 100%;
+    min-width: 272px;
+    height: 2px;
+}
+
+
+.vector-line-div {
+    min-width: 272px;
+    width: 100%;
+    height: 1px;
+    background-image: repeating-linear-gradient(
+      to right,
+      #4B7BB3 0px,
+      #4B7BB3 4px,
+      transparent 4px,
+      transparent 8px
+    );
+  }
+  
+
+
+
+@media (min-width: 768px) {
+
+    .hero-section {
+        background-image:
+            linear-gradient(112deg, rgba(56, 56, 56, 0.25) 9.02%, rgba(153, 153, 153, 0.25) 91.82%),
+            url("../public/images/background-images/about-page-md-bg.png");
+    }
+
+    .hero-section-content {
+        padding: 150px 32px;
+        gap: 24px;
+    }
+
+    .hero-section-content h1 {
+        height: 44px;
+    }
+
+    .hero-section-content p {
+        font-size: 1.5rem;
+        height: 132px;
+        min-width: 369px;
+    }
+
+    .about-us-main-section {
+        padding: 24px 40px;
+    }
+
+    .about-us-image-small-div {
+        display: none;
+    }
+
+    .about-us-main-section {
+        display: flex;
+        gap: 24px;
+    }
+
+    .about-us-sd-gif {
+        display: none;
+    }
+    .about-us-md-gif {
+        display: block;
+        width: 335px;
+        height: 361px;
+        align-self: center;
+    }
+    .about-us-image-medium-div {
+        display: flex;
+        width: 335px;
+    }
+
+    .about-us-section h1 {
+        font-size: 1.75rem;
+    }
+
+    .about-us-section p {
+        font-size: 14px;
+    }
+
+    .solutions-section-head {
+        background-image: url("../public/images/section-background-images/about-us-vision-md-bg.png");
+        padding: 24px 65px 117px 32px;
+    }
+
+    .solutions-section-head h1 {
+        font-size: 1.75rem;
+    }
+
+
+
+    .solutions-scroll {
+        margin-top: -85px;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-bottom: 100px;
+
+    }
+
+
+}
+
+
+@media (min-width: 1025px) {
+    .hero-section {
+        background-image:
+            linear-gradient(112deg, rgba(56, 56, 56, 0.25) 9.02%, rgba(153, 153, 153, 0.25) 91.82%),
+            url("../public/images/background-images/about-page-ld-bg.png");
+    }
+
+    .hero-section-content {
+        padding: 226px 107px 226px 40px;
+        gap: 24px;
+        min-height: 630px;
+    }
+
+    .hero-section-content h1 {
+        height: 55px;
+    }
+
+    .hero-section-content p {
+        font-size: 1.5rem;
+        height: 99px;
+        min-width: 524px;
+        text-align: left;
+    }
+
+    .about-us-main-section {
+        padding: 40px;
+    }
+    .about-us-md-gif {
+        width: 576px;
+        height: 620px;
+    }
+
+    .about-us-image-medium-div {
+        min-width: 576px;
+    }
+
+    .ellipse-1 {
+        height: 250px;
+        width: 250px;
+    }
+
+    .ellipse-2 {
+        height: 325px;
+        width: 325px;
+        margin-top: 80px;
+        margin-left: 0px;
+    }
+
+    .ellipse-3 {
+        height: 220px;
+        width: 220px;
+        margin-top: -57px;
+        margin-left: 31px;
+
+    }
+
+    .ellipse-4 {
+        height: 150px;
+        width: 150px;
+        margin-top: 26px;
+        margin-left: 97px;
+    }
+
+    .about-us-section h1 {
+        font-size: 2rem;
+    }
+
+    .about-us-section p {
+        font-size: 1.25rem;
+    }
+
+    .solutions-section-head {
+        padding: 40px 40px 185px 40px;
+        background-image: url("../public/images/section-background-images/about-us-vision-ld-bg.png");
+
+    }
+
+    .solutions-section-head h1 {
+        font-size: 2rem;
+    }
+
+    .solutions-section-head p {
+        font-size: 1.5rem;
+    }
+
+    .solutions-scroll {
+        margin-top: -112px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 82px;
+        gap: 24px;
+    }
+
+    .solutions-cart {
+        width: 413px;
+    }
+
+    .solutions-cart p {
+        font-size: 15px;
+    }
+
+
+}

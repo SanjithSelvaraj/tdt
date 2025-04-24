@@ -1,0 +1,288 @@
+#nav-home {
+    color: var(--Brand-White, #FFF);
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: 9%;
+    text-underline-offset: 21%;
+    text-underline-position: from-font;
+    text-transform: capitalize;
+}
+
+.hero-section {
+    background-image: url("../public/images/background-images/landing-page-sd-bg.png");
+}
+
+.hero-section-content {
+    gap: 24px;
+}
+
+.solutions-section {
+    background-image: url("../public/images/section-background-images/solutions-sd-bg.png");
+    background-size: cover;
+    background-position: center;
+    padding: 20px 20px 93px 20px;
+}
+
+.solutions-section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.solutions-section-content h1 {
+    color: var(--Brand-White, #FFF);
+    font-family: Nunito;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.solutions-section-content p {
+    color: var(--Brand-White, #FFF);
+    font-family: Nunito;
+    font-size: 0.88rem;
+    font-weight: 400;
+}
+
+.see-our-work-section {
+    padding: 0px 20px 0px 20px;
+    margin-top: -69px;
+}
+
+.work-section-cart {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 24px;
+    border-radius: 10px;
+    border: 3px solid #4AB;
+    background: rgba(213, 240, 245, 0.70);
+    backdrop-filter: blur(20px);
+    box-sizing: border-box;
+}
+
+.work-section-cart-img-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.work-section-img {
+    width: 100%;
+    height: 287px;
+    width: 287px;
+    border-radius: 10px;
+}
+
+.work-section-cart-content {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.work-section-cart-content h1 {
+    color: var(--Brand-Black, #383838);
+    font-family: Nunito;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.work-section-cart-content p {
+    color: var(--Brand-Black, #383838);
+    text-align: justify;
+    font-family: Nunito;
+    font-size: 0.88rem;
+    font-weight: 400;
+}
+
+.work-section-cart-content a {
+    display: inline-flex;
+    width: fit-content;
+    border-radius: 30px;
+    border: 1px solid #FFF;
+    background: var(--Brand-Secondary, #4AB);
+    backdrop-filter: blur(10px);
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    color: var(--Brand-White, #FFF);
+    font-family: Nunito;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact-us-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    padding-bottom: 37px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us-gif {
+    height: 214px;
+    width: 100%;
+}
+
+.contact-us-section h1 {
+    color: var(--Brand-Black, #383838);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding: 21px 20px 32px 20px;
+}
+
+.contact-us-section a {
+    display: inline-flex;
+    width: fit-content;
+    height: 50px;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid #FFF;
+    background: var(--Brand-Secondary, #4AB);
+    backdrop-filter: blur(10px);
+    color: var(--Brand-White, #FFF);
+    font-family: Nunito;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+
+
+@media (min-width: 768px) {
+    .hero-section {
+        background-image:
+            linear-gradient(112deg, rgba(56, 56, 56, 0.15) 9.02%, rgba(153, 153, 153, 0.15) 91.82%),
+            url("../public/images/background-images/landing-page-md-bg.png");
+
+    }
+
+    .solutions-section {
+        background-image: url("../public/images/section-background-images/solutions-md-bg.png");
+        padding: 24px 65px 140px 32px;
+    }
+
+    .solutions-section-content h1 {
+        font-size: 1.75rem;
+    }
+
+    .solutions-section-content p {
+        font-size: 1rem;
+    }
+
+    .see-our-work-section {
+        padding: 0px 40px 0px 40px;
+        margin-top: -92px;
+    }
+
+    .work-section-cart {
+        flex-direction: row;
+        gap: 14px;
+        padding: 32px;
+    }
+
+    .work-section-img {
+        height: 327px;
+        width: 272px;
+    }
+
+    .work-section-cart-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact-us-section {
+        padding: 14.9px 0px 75px 0px;
+        gap: 40px;
+    }
+
+    .contact-us-gif {
+        width: 341.381px;
+        height: 195px;
+        margin-bottom: 14.1px;
+    }
+
+    .contact-us-section h1 {
+        font-size: 1.5rem;
+        padding: 0px;
+    }
+
+}
+
+@media (min-width: 1025px) {
+    .hero-section {
+        background-image:
+            linear-gradient(112deg, rgba(56, 56, 56, 0.15) 9.02%, rgba(153, 153, 153, 0.15) 91.82%),
+            url("../public/images/background-images/landing-page-ld-bg.png");
+
+    }
+
+    .solutions-section {
+        background-image: url("../public/images/section-background-images/solutions-ld-bg.png");
+        padding: 40px 40px 152px 40px;
+    }
+
+    .solutions-section-content h1 {
+        font-size: 2rem;
+    }
+
+    .solutions-section-content p {
+        font-size: 1.5rem;
+    }
+
+
+    .see-our-work-section {
+        padding: 0px 149px 0px 149px;
+        margin-top: -112px;
+    }
+
+    .work-section-cart {
+        gap: 32px;
+        padding: 40px;
+    }
+
+    .work-section-img {
+        height: 447px;
+        width: 395px;
+    }
+
+    .work-section-cart-content h1 {
+        font-size: 1.875rem;
+    }
+
+    .work-section-cart-content p {
+        text-align: left;
+        font-size: 1.5rem;
+    }
+
+    .work-section-cart-content a {
+        font-size: 1.5rem;
+    }
+
+    .contact-us-section {
+        padding: 60px 0px 80px 0px;
+        gap: 40px;
+    }
+
+    .contact-us-gif {
+        width: 487.51px;
+        height: 278.47px;
+        margin-bottom: 42.5px;
+    }
+    .contact-us-section h1 {
+        font-size: 1.875rem;
+    }
+    .contact-us-section a {
+        font-size: 1.5rem;
+    }
+}

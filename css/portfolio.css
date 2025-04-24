@@ -1,0 +1,295 @@
+#nav-portfolio {
+    color: var(--Brand-White, #FFF);
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: 9%;
+    text-underline-offset: 21%;
+    text-underline-position: from-font;
+    text-transform: capitalize;
+}
+
+.hero-section {
+    background-image:
+        linear-gradient(112deg, rgba(56, 56, 56, 0.25) 9.02%, rgba(153, 153, 153, 0.25) 91.82%),
+        url("../public/images/background-images/portfolio-page-sd-bg.png");
+    padding-top: 206px;
+}
+
+.hero-section-content {
+    padding: 24px 29px 24px 20px;
+    gap: 16px;
+}
+
+.hero-section-content h1 {
+    white-space: nowrap;
+}
+
+.hero-section-content p {
+    color: var(--Brand-White, #FFF);
+    text-align: left;
+    font-family: Nunito;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.portfolio-section {
+    display: flex;
+    padding: 24px 20px;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.portfolio-section h1 {
+    color: var(--Brand-Black, #383838);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+.portfolio-card {
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 100%;
+    max-width: 335px;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
+
+.portfolio-card-img {
+    width: 335px;
+    height: 188px;
+    aspect-ratio: 335/188;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-1 {
+    background-image: url("../public/images/section-background-images/portfolio-card-1-sd.png");
+    background-color: lightgray;
+    background-position: center;
+    background-size: cover;
+    image-rendering: auto;
+    background-repeat: no-repeat;
+}
+
+
+.card-2 {
+    background-image: url("../public/images/section-background-images/portfolio-card-2-sd.png");
+    background-color: lightgray;
+    background-position: center;
+    background-size: cover;
+    image-rendering: auto;
+    background-repeat: no-repeat;
+}
+.card-3 {
+    background: url("../public/images/section-background-images/portfolio-card-3-sd.png") lightgray 50% / cover no-repeat;
+}
+
+.portfolio-card h1 {
+    color: var(--Brand-Black, #383838);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 16px 51px;
+    text-decoration: none;
+}
+
+.view-details-container {
+    display: none;
+    height: 100%;
+    background: rgba(68, 170, 187, 0.50);
+    backdrop-filter: blur(10px);
+}
+
+.portfolio-card {
+    position: relative;
+    /* Make it a positioning context for absolute children */
+    overflow: hidden;
+    /* Prevent overflow of the overlay */
+}
+
+.view-details-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    /* For centering */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.view-details-container a {
+    display: inline-flex;
+    width: fit-content;
+    height: 50px;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid #FFF;
+    background: var(--Brand-Secondary, #4AB);
+    backdrop-filter: blur(10px);
+    color: var(--Brand-White, #FFF);
+    font-family: Nunito;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.portfolio-card a {
+    text-decoration: none;
+}
+
+
+@media (min-width: 768px) {
+
+    .hero-section {
+        background-image:
+            linear-gradient(112deg, rgba(56, 56, 56, 0.25) 9.02%, rgba(153, 153, 153, 0.25) 91.82%),
+            url("../public/images/background-images/portfolio-page-md-bg.png");
+        padding-top: 0px;
+    }
+
+    .hero-section-content {
+        padding: 150px 16px 150px 32px;
+        gap: 24px;
+    }
+
+    .hero-section-content h1 {
+        height: 44px;
+        padding: 1px 0px 1px 0px;
+    }
+
+    .hero-section-content p {
+        font-size: 1.5rem;
+        padding: 1px 0px;
+    }
+    .portfolio-section h1 {
+        font-size: 1.75rem;
+    }
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio-section {
+        padding: 24px 40px;
+    }
+
+    .portfolio-card {
+        width: 100%;
+        max-width: 365px;
+
+    }
+
+    .portfolio-card-img {
+        width: 365px;
+        height: 205px;
+        aspect-ratio: 73/41;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .card-1 {
+        background: url("../public/images/section-background-images/portfolio-card-1-md.png") lightgray 50% / cover no-repeat;
+    }
+
+    .card-2 {
+        background: url("../public/images/section-background-images/portfolio-card-2-md.png") lightgray 50% / cover no-repeat;
+    }
+    .card-3 {
+        background: url("../public/images/section-background-images/portfolio-card-3-md.png") lightgray 50% / cover no-repeat;
+    }
+
+    .portfolio-card h1 {
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 16px 42.5px;
+        white-space: nowrap;
+    }
+
+}
+
+
+@media (min-width: 1025px) {
+    .hero-section {
+        background-image:
+            linear-gradient(112deg, rgba(56, 56, 56, 0.25) 9.02%, rgba(153, 153, 153, 0.25) 91.82%),
+            url("../public/images/background-images/portfolio-page-ld-bg.png");
+        padding-top: 0px;
+    }
+
+    .hero-section-content {
+        padding: 226px 107px 226px 40px;
+        min-height: 630px;
+    }
+
+    .portfolio-grid {
+        row-gap: 32px;
+        column-gap: 40px;
+    }
+
+
+    .portfolio-section {
+        padding: 40px 40px;
+    }
+
+    .portfolio-card {
+        max-width: 627px;
+        width: 100%;
+        height: 418px;
+
+    }
+
+    .portfolio-card-img {
+        width: 627px;
+        height: 353px;
+        aspect-ratio: 627/353;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .card-1 {
+        background: url("../public/images/section-background-images/portfolio-card-1-ld.png") lightgray 50% / cover no-repeat;
+    }
+
+    .card-2 {
+        background: url("../public/images/section-background-images/portfolio-card-2-ld.png") lightgray 50% / cover no-repeat;
+    }
+    .card-3 {
+        background: url("../public/images/section-background-images/portfolio-card-3-ld.png") lightgray 50% / cover no-repeat;
+    }
+    .portfolio-card h1 {
+        font-size: 1.25rem;
+        padding: 16px 127px;
+    }
+
+    .portfolio-card:hover .view-details-container {
+        display: flex;
+        opacity: 1;
+    }
+
+}

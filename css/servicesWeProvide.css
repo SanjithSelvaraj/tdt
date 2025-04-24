@@ -1,0 +1,165 @@
+.main-service-provide {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 20px 32px 20px ;
+}
+
+.service-head-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.service-head-container h1 {
+    color: var(--Brand-Black, #383838);
+    font-family: Nunito;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.service-head-container p {
+    color: var(--Brand-Black, #383838);
+    font-family: Nunito;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.all-services-cart {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr;
+    /* Default: 1 column */
+}
+
+.service-cart {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.cart-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 20px;
+}
+
+.cart-content img {
+    height: 62px;
+    width: 62px;
+}
+
+.cart-content h1 {
+    color: var(--Brand-Black, #383838);
+    font-family: Nunito;
+    font-size: .94rem;
+    font-weight: 700;
+}
+
+.cart-content p {
+    color: var(--Brand-Black, #383838);
+    font-family: Nunito;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.vector-line-div {
+    height: 1px;
+    background-color: #919191;
+}
+
+.vector-line-div.sd-none {
+    display: none;
+}
+
+
+
+@media (min-width: 768px) {
+    .main-service-provide {
+        padding: 24px 40px;
+    }
+
+    .service-head-container h1 {
+        font-size: 1.75rem;
+    }
+
+    .service-head-container p {
+        font-size: 1rem;
+    }
+
+    .all-services-cart {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns */
+        row-gap: 32px;
+        column-gap: 16px;
+    }
+
+    .service-cart {
+        flex-direction: row;
+    }
+
+    .cart-content {
+        padding: 24px 0px;
+
+    }
+
+    .vector-line-div {
+        height: 224px;
+        width: 1px;
+    }
+
+    .vector-line-div.md-none {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1025px) {
+    .main-service-provide {
+        padding: 40px;
+        gap: 40px;
+    }
+
+    .service-head-container h1 {
+        font-size: 2rem;
+    }
+
+    .service-head-container p {
+        font-size: 1.5rem;
+    }
+
+    .all-services-cart {
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 columns */
+        row-gap: 40px;
+    }
+
+    .service-cart {
+        gap: 24px;
+    }
+
+    .cart-content {
+        padding: 24px;
+    }
+
+    .cart-content h1 {
+        font-size: 1.25rem;
+    }
+
+    .cart-content p {
+        font-size: 1.25rem;
+    }
+
+    .vector-line-div {
+        height: 100%;
+    }
+    .vector-line-div.ld-block {
+        display: block;
+    }
+
+    .vector-line-div.ld-none {
+        display: none;
+    }
+
+}
