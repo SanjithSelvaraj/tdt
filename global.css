@@ -277,6 +277,51 @@ main {
         height: 60px;
     }
 
+    .scrolled .nav-list-large-device {
+        display: none;
+      }
+  
+      .scrolled .hamburger-icon {
+        display: flex;
+        height: 50px;
+        width: 50px;
+      }
+
+      .nav-bar-open {
+        display: none;
+      }
+
+
+      .menu-container {
+        box-sizing: border-box;
+        position: fixed;
+        z-index: 999;
+        top: 40px;
+        left: auto;
+        right: 110px;
+        width: fit-content;
+        height: fit-content;
+        flex-direction: column;
+        gap: 32px;
+        padding: 24px;
+        padding-right: 140px;
+        border-radius: 10px;
+        border: 1px solid #FFF;
+        background-image: url("public/images/section-background-images/menu-popup-bg.png");
+        /* background: rgba(68, 170, 187, 0.40); */
+        backdrop-filter: blur(10px);
+        background-position: center;
+        background-size: cover;
+    }
+    .nav-item-sd {
+        font-size: 1.25rem;
+    }
+
+    .nav-list-small-device {
+        padding-left: 0px;
+    }
+    
+
     .hero-section-content {
         padding: 225px 107px 225px 40px;
         /* width: 49.122vw; */
