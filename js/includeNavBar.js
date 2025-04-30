@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 const isOpen = icon.getAttribute("data-open") === "true";
 
                 if (isOpen) {
-                    icon.src = "../public/icons/hamburger-icon-png.png";
+                    icon.src = "public/icons/hamburger-icon-png.png";
                     icon.setAttribute("data-open", "false");
                 } else {
                     icon.src = "public/icons/hamburger-close-icon-png.png"; // Replace with your close icon path
@@ -31,11 +31,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (logoPng) {
                     const width = window.innerWidth;
                     if (width >= 1024) {
-                        logoPng.src = "../public/icons/tdt-logo-large-png.png";
+                        logoPng.src = "public/icons/tdt-logo-large-png.png";
                     } else if (width >= 768) {
-                        logoPng.src = "../public/icons/tdt-logo-medium-png.png";
+                        logoPng.src = "public/icons/tdt-logo-medium-png.png";
                     } else {
-                        logoPng.src = "../public/icons/tdt-logo-small-png.png";
+                        logoPng.src = "public/icons/tdt-logo-small-png.png";
                     }
                 }
 
@@ -91,7 +91,7 @@ window.addEventListener('scroll', () => {
 
             const icon = document.getElementById("hamburger-icon");
                 const isOpen = icon.getAttribute("data-open") === "true";
-            icon.src = "../public/icons/hamburger-icon-png.png";
+            icon.src = "public/icons/hamburger-icon-png.png";
             icon.setAttribute("data-open", "false");
         }
     }
