@@ -44,22 +44,22 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (logo) {
                     const width = window.innerWidth;
                     if (width >= 1024) {
-                        logo.src = "/public/icons/tdt-logo-large.svg";
+                        logo.src = "public/icons/tdt-logo-large.svg";
                     } else if (width >= 768) {
-                        logo.src = "/public/icons/tdt-logo-medium.svg";
+                        logo.src = "public/icons/tdt-logo-medium.svg";
                     } else {
-                        logo.src = "/public/icons/tdt-logo-small.svg";
+                        logo.src = "public/icons/tdt-logo-small.svg";
                     }
                 }
                 const navOpenLogo = document.getElementById("responsive-logo-2");
                 if (navOpenLogo) {
                     const width = window.innerWidth;
                     if (width >= 1024) {
-                        navOpenLogo.src = "/public/icons/tdt-logo-large.svg";
+                        navOpenLogo.src = "public/icons/tdt-logo-large.svg";
                     } else if (width >= 768) {
-                        navOpenLogo.src = "/public/icons/tdt-logo-medium.svg";
+                        navOpenLogo.src = "public/icons/tdt-logo-medium.svg";
                     } else {
-                        navOpenLogo.src = "/public/icons/tdt-logo-small.svg";
+                        navOpenLogo.src = "public/icons/tdt-logo-small.svg";
                     }
                 }
 
