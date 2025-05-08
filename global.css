@@ -100,7 +100,7 @@ a {
 
 .nav-item-ld:hover {
     cursor: pointer;
-    background: linear-gradient(90deg, #807E7E 0.12%, #858383 32.94%, #A4A4A4 65.77%, #D2CFCF 98.59%);
+    background: #86E1F0;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
