@@ -1,0 +1,46 @@
+.hero-section {
+    background-image: url("../images/about-us-mobile-bg.png");
+    background-position: center;
+}
+
+.products-section p {
+    color: #000;
+    text-align: justify;
+    font-family: Lato;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.spacer {
+    display: block;
+    height: 16px;
+}
+@media (min-width: 768px) { 
+
+    .hero-section {
+        background-image: url("../images/about-us-tab-bg.png");
+    }
+
+    .sub-div-hero-content h2 {
+        font-size: 1.5rem;
+        white-space: wrap;
+    }
+}
+
+@media (min-width: 1025px) {
+    .hero-section {
+        background-image: url("../images/about-us-large-bg.png");
+    }
+
+    .products-section p {
+        color: #000;
+        font-family: Lato;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        align-self: center;
+    }
+}

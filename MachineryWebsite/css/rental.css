@@ -1,0 +1,21 @@
+.hero-section {
+    background-image: url("../images/rental-mobile-bg.png");
+    background-position: center;
+}
+@media (min-width: 768px) { 
+
+    .hero-section {
+        background-image: url("../images/rental-md-bg.png");
+    }
+
+    .sub-div-hero-content h2 {
+        white-space : wrap;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .hero-section {
+        background-image: url("../images/rental-large-bg.png");
+    }
+}
