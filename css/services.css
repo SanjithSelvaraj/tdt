@@ -14,7 +14,7 @@
 }
 
 .hero-section {
-    background-image: url("../public/images/background-images/service-page-sd-bg.png");
+    background-image: url("../public/images/background-images/service-page-sd-bg.jpg");
     padding-top: 221px;
 }
 
@@ -149,7 +149,7 @@ footer {
 @media (min-width: 768px) {
 
     .hero-section {
-        background-image: url(../public/images/background-images/service-page-md-bg.png);
+        background-image: url(../public/images/background-images/service-page-md-bg.jpg);
         padding-top: 0px;
     }
 
@@ -200,6 +200,10 @@ footer {
 
 
 @media (min-width: 1025px) {
+    .hero-section {
+        background-image: url(../public/images/background-images/service-page-ld-bg.jpg);
+    }
+
     .hero-section-content {
         padding: 198.5px 59px 198.5px 40px;
         min-height: 630px;

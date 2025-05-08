@@ -213,7 +213,7 @@
         border-top-right-radius: 10px;
     }
 
-    .card-1 {
+    /* .card-1 {
         background: url("../public/images/section-background-images/portfolio-card-1-md.png") lightgray 50% / cover no-repeat;
     }
 
@@ -222,7 +222,7 @@
     }
     .card-3 {
         background: url("../public/images/section-background-images/portfolio-card-3-md.png") lightgray 50% / cover no-repeat;
-    }
+    } */
 
     .portfolio-card h1 {
         font-size: 1rem;
@@ -272,7 +272,7 @@
         border-top-right-radius: 10px;
     }
 
-    .card-1 {
+    /* .card-1 {
         background: url("../public/images/section-background-images/portfolio-card-1-ld.png") lightgray 50% / cover no-repeat;
     }
 
@@ -281,7 +281,7 @@
     }
     .card-3 {
         background: url("../public/images/section-background-images/portfolio-card-3-ld.png") lightgray 50% / cover no-repeat;
-    }
+    } */
     .portfolio-card h1 {
         font-size: 1.25rem;
         padding: 16px 127px;

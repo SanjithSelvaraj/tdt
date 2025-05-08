@@ -226,7 +226,7 @@
     .hero-section {
         background-image:
             linear-gradient(112deg, rgba(56, 56, 56, 0.25) 9.02%, rgba(153, 153, 153, 0.25) 91.82%),
-            url("../public/images/background-images/about-page-md-bg.png");
+            url("../public/images/background-images/about-page-md-bg.jpg");
     }
 
     .hero-section-content {
@@ -306,7 +306,7 @@
     .hero-section {
         background-image:
             linear-gradient(112deg, rgba(56, 56, 56, 0.25) 9.02%, rgba(153, 153, 153, 0.25) 91.82%),
-            url("../public/images/background-images/about-page-ld-bg.png");
+            url("../public/images/background-images/about-page-ld-bg.jpg");
     }
 
     .hero-section-content {

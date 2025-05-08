@@ -14,7 +14,7 @@
 }
 
 .hero-section {
-    background-image: url("../public/images/background-images/landing-page-sd-bg.png");
+    background-image: url("../public/images/background-images/landing-page-sd-bg.jpg");
 }
 
 .hero-section-content {
@@ -164,7 +164,7 @@
     .hero-section {
         background-image:
             linear-gradient(112deg, rgba(56, 56, 56, 0.15) 9.02%, rgba(153, 153, 153, 0.15) 91.82%),
-            url("../public/images/background-images/landing-page-md-bg.png");
+            url("../public/images/background-images/landing-page-ld-bg.jpg");
 
     }
 
@@ -223,7 +223,7 @@
     .hero-section {
         background-image:
             linear-gradient(112deg, rgba(56, 56, 56, 0.15) 9.02%, rgba(153, 153, 153, 0.15) 91.82%),
-            url("../public/images/background-images/landing-page-ld-bg.png");
+            url("../public/images/background-images/landing-page-ld-bg.jpg");
 
     }
 

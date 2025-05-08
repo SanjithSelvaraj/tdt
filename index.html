@@ -17,8 +17,8 @@
         <section class="hero-section">
             <div class="hero-section-content">
                 <h1>Innovating Your Digital Experience</h1>
-                <a href="portfolio.html">Start Your Web App Project</a>
-                <a href="contact-us.html">Get a Quote</a>
+                <a href="contact-us.html">Start Your Web App Project</a>
+                <!-- <a href="contact-us.html">Get a Quote</a> -->
             </div>
         </section>
         <section class="solutions-section">
@@ -65,11 +65,11 @@
             const img = document.getElementById('work-responsive-image');
             const width = window.innerWidth;
             if (width < 640) {
-                img.src = "public/images/background-images/landing-page-work-section-sd.png";
+                img.src = "public/images/background-images/landing-page-work-section-sd.jpg";
             } else if (width >= 640 && width < 1024) {
-                img.src = "public/images/background-images/landing-page-work-section-md.png";
+                img.src = "public/images/background-images/landing-page-work-section-md.jpg";
             } else {
-                img.src = "public/images/background-images/landing-page-work-section-ld.png";
+                img.src = "public/images/background-images/landing-page-work-section-ld.jpg";
             }
         }
         // Set image on page load
@@ -77,6 +77,8 @@
         // Set image on window resize
         window.addEventListener('resize', setImageSrc);
     </script>
+
+    
 </body>
 
 </html>

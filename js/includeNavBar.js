@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     document.documentElement.classList.toggle('overflow-y-hidden');
                 }
             };
+
             function updateLogoSrc() {
 
                 const logoPng = document.getElementById("responsive-logo-png");
@@ -39,33 +40,35 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                 }
 
-                // 💡 Responsive logo based on screen width
-                const logo = document.getElementById("responsive-logo");
-                if (logo) {
-                    const width = window.innerWidth;
-                    if (width >= 1024) {
-                        logo.src = "public/icons/tdt-logo-large.svg";
-                    } else if (width >= 768) {
-                        logo.src = "public/icons/tdt-logo-medium.svg";
-                    } else {
-                        logo.src = "public/icons/tdt-logo-small.svg";
-                    }
-                }
+                // Responsive logo based on screen width
+                // const logo = document.getElementById("responsive-logo");
+                // if (logo) {
+                //     const width = window.innerWidth;
+                //     if (width >= 1024) {
+                //         logo.src = "/public/icons/tdt-logo-large.svg";
+                //     } else if (width >= 768) {
+                //         logo.src = "/public/icons/tdt-logo-medium.svg";
+                //     } else {
+                //         logo.src = "/public/icons/tdt-logo-small.svg";
+                //     }
+                // }
+
                 const navOpenLogo = document.getElementById("responsive-logo-2");
                 if (navOpenLogo) {
                     const width = window.innerWidth;
                     if (width >= 1024) {
-                        navOpenLogo.src = "public/icons/tdt-logo-large.svg";
+                        navOpenLogo.src = "/public/icons/tdt-logo-large.svg";
                     } else if (width >= 768) {
-                        navOpenLogo.src = "public/icons/tdt-logo-medium.svg";
+                        navOpenLogo.src = "/public/icons/tdt-logo-medium.svg";
                     } else {
-                        navOpenLogo.src = "public/icons/tdt-logo-small.svg";
+                        navOpenLogo.src = "/public/icons/tdt-logo-small.svg";
                     }
                 }
 
             }
+            updateLogoSrc();
             // Call on initial load
-            window.addEventListener('load', updateLogoSrc);
+            // window.addEventListener('load', updateLogoSrc);
 
             // Call on window resize
             window.addEventListener('resize', updateLogoSrc);

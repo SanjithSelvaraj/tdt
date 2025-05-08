@@ -81,7 +81,7 @@ a {
     align-items: center;
     gap: 32px;
     border-radius: 10px;
-    border: 1px solid #FFF;
+    /* border: 1px solid #FFF; */
     background-image: url('public/images/section-background-images/navbar-bg-ld.png');
     background-position: center;
     background-size: cover;
@@ -306,9 +306,8 @@ main {
         padding: 24px;
         padding-right: 140px;
         border-radius: 10px;
-        border: 1px solid #FFF;
+        border: 0px solid #FFF;
         background-image: url("public/images/section-background-images/menu-popup-bg.png");
-        /* background: rgba(68, 170, 187, 0.40); */
         backdrop-filter: blur(10px);
         background-position: center;
         background-size: cover;
